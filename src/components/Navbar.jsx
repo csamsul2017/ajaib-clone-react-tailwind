@@ -1,11 +1,19 @@
-import React from 'react';
 import logo from '../assets/logo.png';
 
-const Navbar = () => {
+const Navbar = ({ isOpenSidebar, setIsOpenSidebar }) => {
   return (
-    <div className="flex justify-between">
-      <img className="w-28" src={logo} alt="Ajaib Logo" />
-      <span className="material-symbols-rounded">menu</span>
+    <div className="flex justify-between mb-4">
+      <img className="w-28 relative z-10" src={logo} alt="Ajaib Logo" />
+      <div className="flex items-center relative z-10">
+        <span
+          className="material-symbols-rounded"
+          onClick={() => {
+            setIsOpenSidebar(!isOpenSidebar);
+          }}
+        >
+          {isOpenSidebar ? 'close' : 'menu'}
+        </span>
+      </div>
     </div>
   );
 };
