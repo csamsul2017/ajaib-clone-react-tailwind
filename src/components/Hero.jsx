@@ -6,8 +6,8 @@ import appleStore from '../assets/apple.png';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col h-screen -pt-10 bg-blue-50 absolute left-0 px-6">
-      <h1 className="text-4xl font-bold text-center px-4 mt-20">
+    <div className="flex flex-col h-screen -pt-10 bg-blue-50 relative left-0 right-0 px-12 py-3">
+      <h1 className="text-4xl font-bold text-center px-10 mt-20">
         <span className="relative space-y-4">
           Investasi Nyaman
           <img src={stars} className="absolute h-6 w-auto -right-5 top-11" alt="Stars Symbol" />

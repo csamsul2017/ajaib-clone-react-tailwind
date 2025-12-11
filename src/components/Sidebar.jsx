@@ -6,10 +6,6 @@ const Sidebar = ({ isOpenSidebar, setIsOpenSidebar }) => {
   return (
     <div className={`${isOpenSidebar ? 'translate-x-0' : '-translate-x-full'} w-full h-full fixed left-0 right-0 top-0 bg-white px-6 py-3 space-y-7 transform transition-transform duration-300 ease-in-out z-5`}>
       <ul className="space-y-6 mt-12">
-        {/* <li className="flex justify-between border-b border-gray-200 pb-2">
-          <img src={logo} className="h-8 w-auto" alt="Ajaib Logo" />
-          <span className="material-symbols-rounded">close</span>
-        </li> */}
         <li className="flex flex-col gap-4 border-t border-gray-200 ">
           <div className="flex justify-between">
             <a href="#" className="text-violet-800">
